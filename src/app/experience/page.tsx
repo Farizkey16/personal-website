@@ -3,10 +3,6 @@ import { useState } from 'react';
 import { work_experience } from '@/components/data/experience';
 import { ibmPlex, bebasNeue } from '@/components/sections/Profile';
 
-interface ExperienceProps{
-    isActive?: boolean;
-}
-
 export default function ExperienceSection() {
    
     return (
