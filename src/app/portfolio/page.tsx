@@ -59,7 +59,7 @@ export default function PortfolioSection() {
                                     <p className="text-sm mt-2 leading-relaxed text-gray-700">
                                     {value.description}
                                     </p>
-                                    <Button variant="default" size="default" className='cursor-pointer bg-[#08D9D6] text-[#252A34] hover:bg-[#05c0be] my-3'><Link href={`/portfolio/${slugify(value.title)}`}>See More</Link></Button>
+                                    <Button variant="default" size="default" className='cursor-pointer bg-[#08D9D6] text-[#252A34] hover:bg-[#05c0be] my-3'><a href={`/portfolio/${slugify(value.title)}`}>See More</a></Button>
                                 </div>
                          ))}
                          </div>
