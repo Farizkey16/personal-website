@@ -37,7 +37,7 @@ export default function ContactForm() {
         </p>
         <Form {...form}>
            
-            <form onSubmit={() => {}} className="flex flex-col gap-5 bg-white/10 rounded-lg mx-auto w-full max-w-2xl p-4 sm:p-6 md:p-8">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5 bg-white/10 rounded-lg mx-auto w-full max-w-2xl p-4 sm:p-6 md:p-8">
                 
                 <FormField
                 control={form.control}
@@ -81,10 +81,11 @@ export default function ContactForm() {
                     </FormItem>
                 )}
                 />
-                <Button size="default"
+                <Button 
+                size="default"
               variant="default"
               type="submit"
-              className="mt-2 bg-[#08D9D6] text-black font-bold hover:bg-[#05c0be] transition">Send Message</Button>
+              className="cursor-pointer mt-2 bg-[#08D9D6] text-black font-bold hover:bg-[#05c0be] transition">Send Message</Button>
             </form>
         </Form>
         </div>
