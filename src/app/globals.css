@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+
+body {
+  font-family: 'Inter', 'IBM Plex Sans', 'Epilogue', 'Cal Sans', 'Bebas Neue', sans-serif;
+  background: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-font {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 700;
+}
+
+.body-font {
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  .pt-safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .pb-safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
