@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { Bebas_Neue, IBM_Plex_Sans } from "next/font/google";
+import Link from "next/link";
 
 interface ProfileTyping{
     isActive?: string
@@ -37,7 +38,7 @@ export default function ProfilePage({isActive}: ProfileTyping){
                 <p className={`${ibmPlex.className} text-lg text-[#252A34] max-w-md`}>
                 I build website, develop product, and help your product visible to the market.
                 </p>  
-                <Button size="default" variant="default" className={`bg-[#08D9D6] text-[#252A34] hover:bg-[#05c0be] cursor-pointer font-bold w-1/3 md:w-1/3 ${ibmPlex.className}`} >View my work</Button>
+                <Button id="view-work" size="default" variant="default" className={`bg-[#08D9D6] text-[#252A34] hover:bg-[#05c0be] cursor-pointer font-bold w-1/3 md:w-1/3 ${ibmPlex.className}`}><Link href="/portfolio">View my work</Link></Button>
             </div>
 
             <div className="flex justify-center items-center sm:w-1/3 md:w-3xl md:self-end">
